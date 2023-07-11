@@ -17,6 +17,7 @@ public:
     vector<vector<int>> combinationSum(vector<int>& candidates, int target) {
         vector<vector<int>> ans;
         vector<int> ds;
+        sort(candidates.begin(),candidates.end());
         combination(0,candidates,target,ds,ans);
         return ans;
     }
